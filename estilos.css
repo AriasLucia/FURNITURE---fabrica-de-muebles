@@ -105,6 +105,16 @@ body {
   color: var(--beige); 
 }
 
+.navbar-toggler-icon {
+  background-image: none;
+}
+.navbar-toggler-icon::before {
+  content: "\f03a"; 
+  font-family: "Bootstrap Icons";
+  font-size: 1.5rem;
+  color: white;
+}
+
 .search-bar input {
   border-radius: 50px;
   border: 1px solid var(--verde-oscuro);
@@ -703,4 +713,5 @@ body {
 .custom-card img{
  border-top-left-radius: 1rem;
  border-top-right-radius: 1rem;
+
 }
