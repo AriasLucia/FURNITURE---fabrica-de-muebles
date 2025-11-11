@@ -232,8 +232,11 @@ body {
   .carrusel-ancho {
     max-width: 100%;
   }
-    .navbar {
-    align-items: flex-start;
+ .navbar {
+    display: flex;
+    justify-content: space-between; /* logo a la izquierda, hamburguesa a la derecha */
+    align-items: center;            /* mantiene botón centrado verticalmente */
+    padding: 0.5rem 1rem;
   }
 
   .logo-circular {
@@ -836,6 +839,7 @@ body {
  border-top-right-radius: 1rem;
 
 }
+
 
 
 
