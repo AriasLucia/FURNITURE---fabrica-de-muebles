@@ -232,6 +232,25 @@ body {
   .carrusel-ancho {
     max-width: 100%;
   }
+    .navbar {
+    align-items: flex-start;
+  }
+
+  .logo-circular {
+    margin-top: -5px; /* ajustá según convenga */
+  }
+
+  /* Título “Productos” sobre el carrusel */
+  .titulo-carrusel {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5rem;
+    z-index: 10;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  }
 
 }
 
@@ -817,5 +836,6 @@ body {
  border-top-right-radius: 1rem;
 
 }
+
 
 
