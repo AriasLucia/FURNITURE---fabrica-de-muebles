@@ -123,45 +123,40 @@ body {
 }
 
 @media (max-width: 991px) {
-  .container-fluid {
+  .navbar .container-fluid {
     display: flex;
-    align-items: center;
+    align-items: center;      /* centra verticalmente dentro del navbar */
     justify-content: space-between; /* logo a la izquierda, buscador al centro, hamburguesa a la derecha */
-    gap: 0.5rem;
+    padding: 0.5rem 1rem;
   }
 
   .logo-circular {
-    order: 1; /* siempre a la izquierda */
-    margin-top: 0; /* ajusta si quieres subirlo */
+    order: 1;
+    margin-top: 0; /* ajusta para subir el logo si hace falta */
   }
 
   .search-bar {
-    order: 2; /* en el medio */
-    flex-grow: 1; /* ocupa el espacio disponible */
+    order: 2;
+    flex-grow: 1;
     margin: 0 0.5rem;
   }
 
   .navbar-toggler {
-    order: 3; /* a la derecha */
-    
-  }
-   .navbar-toggler i {
-    color: white; /* fuerza el icono a blanco */
-    font-size: 1.8rem; /* tamaño adecuado para móviles */
+    order: 3;
+    margin: 0; /* sin márgenes que lo desalineen */
   }
 
-  /* Opcional: reducir tamaño del input en móviles */
-  .search-bar input {
-    width: 100%;
-    font-size: 0.9rem;
+  .navbar-toggler i {
+    color: white; 
+    font-size: 1.8rem;
   }
 
-  /* Menú desplegable full width en móviles */
   #menu {
     width: 100%;
     text-align: center;
   }
 }
+
 @media (max-width: 991px) {
   body, html {
     text-align: center;
@@ -810,4 +805,5 @@ body {
 .custom-card img{
  border-top-left-radius: 1rem;
  border-top-right-radius: 1rem;
+
 }
