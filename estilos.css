@@ -124,6 +124,7 @@ body {
 
 @media (max-width: 991px) {
 
+  /* ----- Menú y navbar ----- */
   #menu {
     background-color: var(--verde-oscuro);
   }
@@ -137,7 +138,6 @@ body {
   #menu .nav-link:hover {
     color: var(--beige) !important;
   }
-
 
   .login-btn {
     background-color: var(--verde-oscuro);
@@ -167,9 +167,8 @@ body {
     z-index: 1000;
     position: relative;
   }
-}
 
-@media (max-width: 991px) {
+  /* ----- Centrado general ----- */
   body, html {
     text-align: center;
   }
@@ -224,7 +223,30 @@ body {
     max-width: 100%;
   }
 
+  /* ----- Ajustes específicos de móviles ----- */
+  /* Subir logo dentro del navbar */
+  .navbar {
+    align-items: flex-start;
+  }
+
+  .logo-circular {
+    margin-top: -5px; /* ajustá según convenga */
+  }
+
+  /* Título “Productos” sobre el carrusel */
+  .titulo-carrusel {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5rem;
+    z-index: 10;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  }
+
 }
+
 
 .hero {
   height: 400px;
@@ -808,3 +830,4 @@ body {
  border-top-right-radius: 1rem;
 
 }
+
