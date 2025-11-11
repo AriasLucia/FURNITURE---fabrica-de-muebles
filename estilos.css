@@ -124,7 +124,6 @@ body {
 
 @media (max-width: 991px) {
 
-  
   #menu {
     background-color: var(--verde-oscuro);
   }
@@ -153,13 +152,18 @@ body {
     background-color: var(--beige);
     color: var(--verde-oscuro);
   }
-  .navbar-toggler i {
-    transition: transform 0.3s;
+  .navbar-toggler {
+    border: none;
   }
 
-  .navbar-toggler:hover i {
-    transform: scale(1.1);
-    color: var(--beige);
+  .navbar-toggler-icon {
+    background-image: none; 
+  }
+
+  .navbar-toggler::before {
+    content: "\2630"; 
+    font-size: 1.5rem;
+    color: white; 
   }
 
   .navbar-collapse {
@@ -167,6 +171,7 @@ body {
     position: relative;
   }
 }
+
 
 @media (max-width: 991px) {
   body, html {
@@ -816,4 +821,5 @@ body {
 .custom-card img{
  border-top-left-radius: 1rem;
  border-top-right-radius: 1rem;
+
 }
