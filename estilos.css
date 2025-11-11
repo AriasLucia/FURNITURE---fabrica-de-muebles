@@ -817,13 +817,13 @@ body {
     margin: 0;
   }
   .hero-overlay h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     margin: 0;
   }
   
   h2, h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   p, .nav-link, .btn, .login-btn {
@@ -889,4 +889,5 @@ body {
   text-align: center;
   text-shadow: 2px 2px 8px black;
 }
+
 
