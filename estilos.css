@@ -122,10 +122,8 @@ body {
   border: 1px solid white;
 }
 
-/* Solo para móviles (pantallas menores a 992px) */
 @media (max-width: 991px) {
 
-  /* Fondo y links del menú desplegable */
   #menu {
     background-color: var(--verde-oscuro);
   }
@@ -140,14 +138,14 @@ body {
     color: var(--beige) !important;
   }
 
-  /* Botón login */
+
   .login-btn {
     background-color: var(--verde-oscuro);
     border: 1px solid white;
     border-radius: 50px;
     color: white;
     padding: 6px 22px;
-    margin-top: 0.5rem; /* Para separar del menú */
+    margin-top: 0.5rem; 
     transition: 0.3s;
   }
 
@@ -156,7 +154,6 @@ body {
     color: var(--verde-oscuro);
   }
 
-  /* Ícono hamburguesa */
   .navbar-toggler i {
     transition: transform 0.3s;
   }
@@ -166,13 +163,68 @@ body {
     color: var(--beige);
   }
 
-  /* Asegura que el menú desplegable quede encima */
   .navbar-collapse {
     z-index: 1000;
     position: relative;
   }
 }
 
+@media (max-width: 991px) {
+  body, html {
+    text-align: center;
+  }
+
+  .container, .container-fluid, main, .hero, .categorias, .cards-container, .bloque-verde, .bloque-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  a.btn, .login-btn, .categoria, .pelotita, .boton-comprar, .custom-boton, .custom-boton-tarjeta, .boton-rojo, .boton-enviar {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+  }
+
+  img, .logo-circular, .logo-circular2, .logo-formulario, .logo-fabrica, .caja-circular, .custom-card img, .carrusel-img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .categoria-wrapper, .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero, .hero-container, .hero-video, .fondo-imagen, .contenedor-foto {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .texto-foto {
+    font-size: 1.2rem;
+    white-space: normal;
+    padding: 0 1rem;
+  }
+
+  .bloque-login {
+    max-width: 95%;
+    padding: 2rem;
+  }
+
+  .carrusel-ancho {
+    max-width: 100%;
+  }
+
+}
 
 .hero {
   height: 400px;
@@ -754,4 +806,5 @@ body {
 .custom-card img{
  border-top-left-radius: 1rem;
  border-top-right-radius: 1rem;
+
 }
