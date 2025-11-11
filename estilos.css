@@ -239,10 +239,6 @@ body {
     padding: 0.5rem 1rem;
   }
 
-  .logo-circular {
-    margin-top: -5px; /* ajustá según convenga */
-  }
-
   /* Título “Productos” sobre el carrusel */
   .titulo-carrusel {
     position: absolute;
@@ -839,6 +835,7 @@ body {
  border-top-right-radius: 1rem;
 
 }
+
 
 
 
