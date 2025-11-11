@@ -124,7 +124,8 @@ body {
 
 @media (max-width: 991px) {
 
-  /* ----- Menú y navbar ----- */
+  
+  /* Fondo y links del menú desplegable */
   #menu {
     background-color: var(--verde-oscuro);
   }
@@ -139,13 +140,14 @@ body {
     color: var(--beige) !important;
   }
 
+  /* Botón login */
   .login-btn {
     background-color: var(--verde-oscuro);
     border: 1px solid white;
     border-radius: 50px;
     color: white;
     padding: 6px 22px;
-    margin-top: 0.5rem; 
+    margin-top: 0.5rem; /* Para separar del menú */
     transition: 0.3s;
   }
 
@@ -154,6 +156,7 @@ body {
     color: var(--verde-oscuro);
   }
 
+  /* Ícono hamburguesa */
   .navbar-toggler i {
     transition: transform 0.3s;
   }
@@ -163,16 +166,23 @@ body {
     color: var(--beige);
   }
 
+  /* Asegura que el menú desplegable quede encima */
   .navbar-collapse {
     z-index: 1000;
     position: relative;
   }
+}
 
-  /* ----- Centrado general ----- */
+@media (max-width: 991px) {
+    /* Centrar textos y contenedores principales */
   body, html {
     text-align: center;
   }
 
+
+  .logo-circular {
+    margin-top: -5px; 
+  }
   .container, .container-fluid, main, .hero, .categorias, .cards-container, .bloque-verde, .bloque-contacto {
     display: flex;
     flex-direction: column;
@@ -223,33 +233,7 @@ body {
     max-width: 100%;
   }
 
-  /* ----- Ajustes específicos de móviles ----- */
-  /* Subir logo dentro del navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between; /* logo a la izquierda, hamburguesa a la derecha */
-    align-items: center;            /* mantiene botón centrado verticalmente */
-    padding: 0.5rem 1rem;
-  }
-
-  .logo-circular {
-    margin-top: -5px; /* ajustá según convenga */
-  }
-
-  /* Título “Productos” sobre el carrusel */
-  .titulo-carrusel {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 1.5rem;
-    z-index: 10;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-  }
-
 }
-
 
 .hero {
   height: 400px;
@@ -833,4 +817,5 @@ body {
  border-top-right-radius: 1rem;
 
 }
+
 
