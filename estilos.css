@@ -761,6 +761,11 @@ body {
   .navbar-toggler {
     display: none; 
   }
+
+   .search-icon {
+    display: none;
+  }
+
 }
 
 
@@ -915,9 +920,10 @@ body {
 
 .producto-card img {
   width: 100%;
-  height: 200px;          /* alto uniforme (ajustá según lo que te guste) */
-  object-fit: cover;      /* mantiene proporción y recorta lo que sobra */
-  object-position: center;/* centra la imagen dentro del recorte */
-  border-radius: 8px;     /* opcional: esquinas redondeadas */
+  height: 200px;         
+  object-fit: cover;     
+  object-position: center;
+  border-radius: 8px;     
 }
+
 
